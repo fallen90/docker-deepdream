@@ -7,6 +7,10 @@ docker run -d -p 443:8888 -e "PASSWORD=password" -v /path/to/your/files:/src fal
 ```
 > You can also map port 8888 (iPython web interface) to a different port (80)
 
+Or you can also use this as base image in your Dockerfile
+
+`FROM fallen/docker-deepdream:latest`
+
 After that, goto `https://<docker-api>/`
 
 ## Features / Installed
